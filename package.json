@@ -1,0 +1,44 @@
+{
+  "name": "webhook-test",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Listen to mentions of our team",
+  "author": "Kate Higa",
+  "type": "module",
+  "license": "None",
+  "homepage": "https://github.com//",
+  "keywords": [
+    "github"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest ",
+    "lint": "prettier --write ."
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fetch-mock": "^9.11.0",
+    "fetch-mock-jest": "^1.5.1",
+    "octokit": "^2.0.16",
+    "pino": "^8.14.1",
+    "prettier": "^2.8.8",
+    "uuid": "^9.0.0",
+    "yaml": "^2.2.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "smee-client": "^1.2.2"
+  },
+  "engines": {
+    "node": ">= 10.13.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "lines": 90
+      }
+    }
+  }
+}
